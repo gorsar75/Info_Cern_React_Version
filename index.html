@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info react</title>
+</head>
+<body>
+<div id="app"></div>
+
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/babel.js"></script>
+
+<script type="text/babel">
+
+
+    function Header() {
+        const infoName = "World Wide Web";
+
+        return (
+            <div>
+                <h1>{infoName}</h1>
+                <p>The WorldWideWeb (W3) is a wide-area hypermedia information retrieval initiative aiming to give universal access to a large universe of documents.</p>
+            </div>
+        );
+    }
+    function Para1() {
+        return (
+            <div>
+                <p>Everything there is online about W3 is linked directly or indirectly to this document, including an executive summary of the project, Mailing lists , Policy , November's W3 news , Frequently Asked Questions .</p>
+            </div>
+        )
+    }
+
+
+    function Header2() {
+        return (
+            <div>
+                <h3> What's out there</h3>
+            </div>
+        );
+    }
+    function Para2() {
+        return (
+            <div>
+                <p>Pointers to the world's online information, subjects , W3 servers, etc.</p>
+            </div>
+        )
+    }
+
+
+    function Header3() {
+        return(
+            <div>
+                <h3>Help</h3>
+            </div>
+        );
+    }
+
+
+    function Para3() {
+        return(
+            <div>
+                <p>on the browser you are using</p>
+            </div>
+        );
+    }
+    function Header4() {
+        return(
+            <div>
+                <h3>Software Products</h3>
+            </div>
+        );
+    }
+    function Para4() {
+        return(
+            <div>
+                <p>A list of W3 project components and their current state. (e.g. Line Mode ,X11 Viola , NeXTStep , Servers , Tools , Mail robot , Library )</p>
+            </div>
+        );
+    }
+
+    function Header5() {
+        return(
+            <div>
+                <h3>Technical</h3>
+            </div>
+        );
+    }
+    function Para5() {
+        return(
+            <div>
+                <p>Paper documentation on W3 and references.</p>
+            </div>
+        );
+    }
+
+
+    function App() {
+        return (
+            <div>
+                <Header name="World Wide Web"/>
+                <Para1/>
+                <Header2 name="What's out there"/>
+                <Para2/>
+                <Header3 name="Help"/>
+                <Para3/>
+                <Header4 name="Software Products"/>
+                <Para4/>
+                <Header5 name="Technical"/>
+                <Para5/>
+
+
+            </div>
+        );
+    };
+
+    ReactDOM.render(
+        <App/>,
+        document.getElementById('app')
+    );
+
+</script>
+
+</body>
+</html>
